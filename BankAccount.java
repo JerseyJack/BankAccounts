@@ -38,23 +38,28 @@ public abstract class BankAccount
 
     protected String getAccountNumber() 
     {
-        return accountNumber;
+        return this.accountNumber;
     }
 
     protected String getAccountName()
     {
-        return accountName;
+        return this.accountName;
     }
 
     protected double getAccountBalance()
     {
-        return accountBalance;
+        return this.accountBalance;
+    }
+
+    public void setAccountBalance(double accountBalance)
+    {
+        this.accountBalance = accountBalance;
     }
 
     //Setting up the abstract class to force derived classes to use it
     protected abstract AccountType getAccountType();
 
-    protected abstract boolean canWithdraw(double accountBalance);
+    protected abstract boolean isOverdrawn(double accountBalance);
 
 }
 
