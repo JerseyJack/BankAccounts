@@ -73,7 +73,7 @@ public abstract class BankAccount implements IAccount
         {
             //If the value is valid deposit the money
             this.accountBalance += depositAmount;
-            return String.format("-----------------------------\n\nDEPOSIT RECIEPT\n\n%s \nDeposit Amount: £%s \nNew Balance: £%s \n\n-----------------------------",this.accountType(),depositAmount, this.accountBalance);
+            return String.format("-----------------------------\n\nDEPOSIT RECIEPT\n\n%s \nDeposit Amount: £%s \nNew Balance: £%s \n\n-----------------------------",this.accountType(), depositAmount, this.accountBalance);
         }
     }
     
